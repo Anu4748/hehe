@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Potion Brewing</title>
+    <link rel="stylesheet" href="us.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Love Potion Brewing</h1>
+        <p id="intro">Welcome to the Love Potion! Answer the questions to gather the ingredients!</p>
+        
+        <!-- Ingredient Gathering Steps -->
+        <div id="ingredient1" class="ingredient">
+            <h2>Ingredient 1: Memory Challenge</h2>
+            <p>Where did we have our first date?</p>
+            <input type="text" id="answer1">
+            <button onclick="checkAnswer1()">Submit</button>
+        </div>
+
+        <div id="ingredient2" class="ingredient">
+            <h2>Ingredient 2: Riddle Challenge</h2>
+            <p>What song reminds me of us?</p>
+            <input type="text" id="answer2">
+            <button onclick="checkAnswer2()">Submit</button>
+        </div>
+
+        <div id="ingredient3" class="ingredient">
+            <h2>Ingredient 3: Sweet Message Challenge</h2>
+            <p>Type a short love message for me!</p>
+            <textarea id="answer3"></textarea>
+            <button onclick="checkAnswer3()">Submit</button>
+        </div>
+
+        <!-- Potion Brewing -->
+        <div id="potion">
+            <button id="brew-button" onclick="brewPotion()">Brew the Potion</button>
+            
+            <!-- Cylindrical Flask -->
+            <div id="flask-container">
+                <div id="flask">
+                    <div id="potion-liquid"></div>
+                    <div id="flask-cork"></div>
+                </div>
+            </div>
+
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="Untitled-1.js"></script>
+</body>
+</html>
